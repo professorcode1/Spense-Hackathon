@@ -1,8 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
 import type { IProductScreen } from '../types/API'
-
-const initialState: IProductScreen[] = []
+import productList from "./productlist.json"
+const initialState: IProductScreen[] = productList
 
 export const productListSlice = createSlice({
   name: 'product',
