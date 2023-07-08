@@ -13,11 +13,11 @@ To use locally
 <br>
 Not all the data is in the csv in amazon-scraper. If you want all the data first delete all csvs then , run 
 <ol>
-<li>category_scraper.py</li>
-<li>brand_scraper.py</li>
-<li>product_scraper.py</li>
+<li>category_scraper.py (will take a few minutes )</li>
+<li>brand_scraper.py (will take a few hours)</li>
+<li>product_scraper.py (will take a day or more)</li>
 </ol>
-It can take well over a day if you try to scrape all the data (beautiful soup isn't enough and selenium had to be used, source:bro just trust me )
+<br>
 Attributions
 
 Image by <a href="https://www.freepik.com/free-vector/hand-drawn-different-people-icons-pack_17893869.htm#query=people&position=26&from_view=keyword&track=sph">Freepik</a>
