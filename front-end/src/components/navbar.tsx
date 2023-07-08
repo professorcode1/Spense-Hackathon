@@ -100,7 +100,7 @@ const Navbar:React.FC<{}> = () => {
         )
     }
     return (
-        <div className="h-screen w-12 border border-black flex justify-center absolute bg-white">
+        <div className="h-screen w-12 border border-black flex justify-center absolute bg-white z-[1000]">
             <div onClick={() => {dispacher(openNavbar())}}>
                 <img src="menu minimalist icon.png" className="w-6  mt-4" />
             </div>

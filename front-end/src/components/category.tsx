@@ -46,6 +46,7 @@ const Category:React.FC<{}> = () => {
                 const result =  await axios.get<IProductScreen[]>(REQUEST_BASE_URL + "/get_products_by_category", {
                     params:{category_id}
                 })
+                console.log(result)
                 dispatcher(setProductList(result.data))
                 dispatcher(setScreen("ProductList"))
                 dispatcher(closeNavbar())

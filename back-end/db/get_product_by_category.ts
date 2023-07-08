@@ -14,7 +14,7 @@ export async function get_products_by_category(req:Request, res:Response) {
                 products,
                 product_images : product_images.filter(product_img => product_img.product_id === products.id)
             }
-        }) 
+        }).filter(x => x.product_images.length > 0)
         return res.send(result);
     }catch(error){
         console.log(error)
