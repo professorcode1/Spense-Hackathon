@@ -1,4 +1,4 @@
-\c spensehackdb
+\c spensehackdb;
 SELECT setval(
     pg_get_serial_sequence('users','id'),
     (
@@ -10,7 +10,7 @@ SELECT setval(
             )-1 
         FROM users
     )
-)
+);
 
 
 SELECT setval(
@@ -24,7 +24,7 @@ SELECT setval(
             )-1 
         FROM users
     )
-)
+);
 
 
 SELECT setval(
@@ -38,7 +38,7 @@ SELECT setval(
             )-1 
         FROM users
     )
-)
+);
 
 
 SELECT setval(
@@ -52,5 +52,5 @@ SELECT setval(
             )-1 
         FROM users
     )
-)
+);
 

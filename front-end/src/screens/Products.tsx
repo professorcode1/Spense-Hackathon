@@ -32,8 +32,8 @@ const Images:React.FC<{images:IProductImages[]}> = (props) =>{
 const ProductDescription:React.FC<{product:IProduct}> = (props) => {
     return (
         <div className="h-full w-full flex flex-col  justify-center">
-            <p className="text-2xl border-b border-slate-800 pb-4">
-                {props.product.name}
+            <p className="text-2xl border-b border-slate-800 pb-4" 
+                dangerouslySetInnerHTML={{__html:props.product.name}}>
             </p>
             <div className="flex flex-col  mt-4  border-b border-slate-800 pb-4">
                 
@@ -43,12 +43,12 @@ const ProductDescription:React.FC<{product:IProduct}> = (props) => {
                 <div className="flex justify-around">
                     <div className="bg-gray-300 p-1 grow w-24 flex flex-col items-center justify-center m-2 cursor-pointer">
                         <img src="blue delivery box icon.png" className="h-8" /> 
-                        <p>Orders</p>
+                        <p>Order</p>
                     </div>
 
                     <div className="bg-gray-300 p-1 grow w-24 flex flex-col items-center justify-center m-2 cursor-pointer">
                         <img src="blue cart icon.png" className="h-8" /> 
-                        <p>Cart</p>
+                        <p>Add to Cart</p>
                     </div>
                 </div>
             </div>

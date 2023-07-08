@@ -5,7 +5,7 @@ import type { IScreen } from '../types/screens'
 
 
 // Define the initial state using that type
-const initialState: IScreen = "ProductList"
+const initialState: IScreen = "LandingPage"
 
 export const screenSlice = createSlice<
 IScreen,{

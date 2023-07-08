@@ -1,4 +1,3 @@
 node_modules
 front-end/node_modules
-amazon-scraper/*.csv
 dist/

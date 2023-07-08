@@ -5,6 +5,7 @@ import { IProductScreen } from "../types/API"
 import ProductCard from "../components/product_card"
 import { setProduct } from "../redux/product"
 import { setScreen } from "../redux/screen"
+import TopBar from "../components/top_bar"
 const InternalScreenImplementation:React.FC<{}> = () => {
     const product_list:IProductScreen[] = useAppSelector(s => s.productList)
     const dispatcher = useAppDispatch()
@@ -13,7 +14,7 @@ const InternalScreenImplementation:React.FC<{}> = () => {
         dispatcher(setScreen("Product"))
     }
     return (
-        <div className="h-screen overflow-auto w-full relative  " >
+        <div className="h-screen w-full relative  " >
            <div className="flex flex-wrap align-center items-center justify-around" >
            
            {product_list.map((product_data,index) => 
@@ -34,9 +35,10 @@ const InternalScreenImplementation:React.FC<{}> = () => {
 }
 const ProductsList:React.FC<{}> = () => {
 
-    return <div className="h-screen w-screen relative" >
+    return <div className="h-screen w-screen relative overflow-y-clip " >
         <Navbar />
-        <div className="h-screen pl-12">
+        <TopBar />
+        <div className="h-screen pl-12 pt-12 overflow-x-auto">
             <InternalScreenImplementation />
         </div>
     </div>
