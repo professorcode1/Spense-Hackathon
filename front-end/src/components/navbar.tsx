@@ -72,7 +72,7 @@ const Navbar:React.FC<{}> = () => {
     const {open} = useAppSelector(s => s.navbar)
     const dispacher = useAppDispatch()
     const user_context = useAppSelector(s => s.user_context)
-    const onHomeScreen = useAppSelector(s => s.screen) === "Homescreen"
+    // const onHomeScreen = useAppSelector(s => s.screen) === "Homescreen"
     const width = 400
     const footerHeight = 40;
     if(open){

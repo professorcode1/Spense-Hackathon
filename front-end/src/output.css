@@ -599,6 +599,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.ml-16 {
+  margin-left: 4rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -621,18 +625,6 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.ml-8 {
-  margin-left: 2rem;
-}
-
-.ml-12 {
-  margin-left: 3rem;
-}
-
-.ml-16 {
-  margin-left: 4rem;
 }
 
 .line-clamp-3 {
@@ -670,6 +662,10 @@ video {
   height: 20rem;
 }
 
+.h-\[22px\] {
+  height: 22px;
+}
+
 .h-\[30\%\] {
   height: 30%;
 }
@@ -680,6 +676,10 @@ video {
 
 .h-\[40\%\] {
   height: 40%;
+}
+
+.h-\[44px\] {
+  height: 44px;
 }
 
 .h-\[60px\] {
@@ -696,14 +696,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[44px\] {
-  height: 44px;
-}
-
-.h-\[22px\] {
-  height: 22px;
 }
 
 .w-12 {
@@ -738,6 +730,10 @@ video {
   width: 30%;
 }
 
+.w-\[40\%\] {
+  width: 40%;
+}
+
 .w-\[45\%\] {
   width: 45%;
 }
@@ -758,24 +754,16 @@ video {
   width: 100vw;
 }
 
-.w-48 {
-  width: 12rem;
-}
-
-.w-\[25\%\] {
-  width: 25%;
-}
-
-.w-\[40\%\] {
-  width: 40%;
-}
-
 .grow {
   flex-grow: 1;
 }
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .flex-row {
@@ -826,8 +814,16 @@ video {
   overflow: clip;
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
+}
+
+.overflow-y-clip {
+  overflow-y: clip;
 }
 
 .text-clip {
@@ -942,6 +938,10 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -954,12 +954,24 @@ video {
   padding-left: 0.5rem;
 }
 
-.pl-8 {
-  padding-left: 2rem;
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pl-\[24px\] {
+  padding-left: 24px;
 }
 
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
 .pt-12 {
@@ -974,12 +986,20 @@ video {
   padding-top: 0.75rem;
 }
 
-.pr-4 {
-  padding-right: 1rem;
+.pl-\[32px\] {
+  padding-left: 32px;
 }
 
-.pt-1 {
-  padding-top: 0.25rem;
+.pl-\[40px\] {
+  padding-left: 40px;
+}
+
+.pl-\[44px\] {
+  padding-left: 44px;
+}
+
+.pl-\[48px\] {
+  padding-left: 48px;
 }
 
 .text-2xl {
@@ -990,6 +1010,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-5xl {
